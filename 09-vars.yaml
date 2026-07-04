@@ -1,5 +1,6 @@
 - name: variables from cmd line
   hosts: local
+  connection: local
   tasks:
   - name: printing name
     debug:
