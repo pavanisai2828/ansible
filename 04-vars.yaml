@@ -6,5 +6,5 @@
     Course: Ansible
     Trainer: Siva
     Duration: 150 hrs
-  -debug:
+  debug:
     msg: "Hi I am learning {{ Course }} , Trainer is {{ Trainer }} and Duration is {{ Duration }}"
