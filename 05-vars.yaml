@@ -1,13 +1,13 @@
 - name: Demo on task level variables
   hosts: localhost #execute in the same server
   connection: local # it will not ask for username and password
-  vars:
+  vars: ##play level
     Course: Ansible
     Trainer: Siva
     Duration: 150 hrs
   tasks:
   - name: Printing
-    vars:
+    vars: ### task level parents (more priority overriding concept)
       Course: Devsecops with AIOPS
     debug:
       msg: "Hi I am learning {{ Course }} , Trainer is {{ Trainer }} and Duration is {{ Duration }}"
