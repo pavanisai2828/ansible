@@ -1,4 +1,4 @@
-- name: Demo on play level variables
+- name: Demo on task level variables
   hosts: localhost #execute in the same server
   connection: local # it will not ask for username and password
   vars:
@@ -7,5 +7,7 @@
     Duration: 150 hrs
   tasks:
   - name: Printing
+    vars:
+      Course: Devsecops with AIOPS
     debug:
       msg: "Hi I am learning {{ Course }} , Trainer is {{ Trainer }} and Duration is {{ Duration }}"
