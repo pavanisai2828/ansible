@@ -7,3 +7,5 @@
   - name: printing var info
     debug:
       msg: "Hi I am learning {{ Course }} , Trainer is {{ Trainer }} and Duration is {{ Duration }}"
+
+
