@@ -6,7 +6,7 @@
       prompt: "please enter username"
       private: False
     - name: password
-      prompt: "Please enter password"
+      prompgit: "Please enter password"
       private: True
   tasks:
   - name: printing
