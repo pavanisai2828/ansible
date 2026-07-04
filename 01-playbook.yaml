@@ -4,4 +4,4 @@
   tasks: #tasks=modules=collection
   ##tasks can be list of tasks so use -
     - name: ping the server
-      ping:
+      ping: # ansible.builtin.ping by default
