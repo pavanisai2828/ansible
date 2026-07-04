@@ -2,13 +2,13 @@
   hosts: localhost
   connection: local
   vars_prompt:
-  - name: username
-    prompt: "please enter username"
-    private: False
-  - name: password
-    promt: "Please enter password"
-    private: True
+    - name: username
+      prompt: "please enter username"
+      private: False
+    - name: password
+      promt: "Please enter password"
+      private: True
   tasks:
   - name: printing
     debug:
-      msg: "Username is {{ username }} and passowrd is {{ password }}"
+      msg: "Username is {{ name }} and passowrd is {{ password }}"
