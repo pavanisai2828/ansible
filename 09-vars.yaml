@@ -1,0 +1,6 @@
+- name: variables from cmd line
+  hosts: local
+  tasks:
+  - name: printing name
+    debug:
+      msg: "name is {{ name }}"
