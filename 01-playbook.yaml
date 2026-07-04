@@ -1,0 +1,7 @@
+- name: ping the server
+  hosts: #specify target server(will specify in inventory file)
+  ####ansible inventory means servers that ansible target 
+  tasks: #tasks=modules=collection
+  ##tasks can be list of tasks so use -
+    - name: ping the server
+      ping:
